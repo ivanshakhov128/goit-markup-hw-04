@@ -100,8 +100,8 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
-  transition-property: background-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-list-link.current {
@@ -116,6 +116,7 @@ body {
   left: 0;
   bottom: -1px;
   background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .header-list-link:hover,
@@ -132,8 +133,8 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   padding: 24px 0;
-  transition-property: background-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section {
@@ -150,7 +151,9 @@ body {
     ),
     url(../images/office.jpg);
   background-repeat: no-repeat;
-  background-size: 1440px;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .hero-title {
@@ -181,11 +184,11 @@ body {
   min-width: 169px;
   border: none;
   transition-property: background-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 .hero-btn:focus {
@@ -211,6 +214,8 @@ body {
 }
 
 .features-list-item {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   width: calc((100% - 72px) / 4);
 }
 
@@ -298,7 +303,19 @@ body {
   fill: #f4f4fd;
 }
 
-.contacts-link {
+/* .contacts-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.team-contacts-item {
   display: flex;
   width: 40px;
   height: 40px;
@@ -309,6 +326,7 @@ body {
   transition-property: background-color;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contacts-link:hover {
   background-color: #404bbf;
 }
@@ -333,7 +351,7 @@ body {
   padding: 40px 32px;
   height: 100%;
   transform: translateY(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list {
@@ -341,6 +359,7 @@ body {
   gap: 24px;
   flex-wrap: wrap;
   row-gap: 48px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
