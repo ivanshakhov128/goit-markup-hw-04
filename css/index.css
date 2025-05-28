@@ -405,9 +405,10 @@ body {
   margin-bottom: 16px;
 }
 
-.team-contacts.footer-socials {
-  justify-content: start;
+.contacts-link:hover.footer-links {
+  background-color: #31d0aa;
 }
+
 .footer-div {
   display: flex;
   gap: 120px;
