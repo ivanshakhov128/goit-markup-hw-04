@@ -404,7 +404,9 @@ body {
   color: #fff;
   margin-bottom: 16px;
 }
-
+.team-contacts.footer-socials {
+  padding: 0;
+}
 .contacts-link:hover.footer-links {
   background-color: #31d0aa;
 }
