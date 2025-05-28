@@ -292,12 +292,12 @@ body {
   width: calc((100% - 72px) / 4);
 }
 
-.team-contacts {
+/* .team-contacts {
   display: flex;
   gap: 24px;
   padding-left: 16px;
   padding-right: 16px;
-}
+} */
 
 .icon {
   fill: #f4f4fd;
