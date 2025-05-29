@@ -424,6 +424,10 @@ body {
   background-color: #31d0aa;
 }
 
+.contacts-link:focus.footer-links {
+  background-color: #31d0aa;
+}
+
 .footer-div {
   display: flex;
   align-items: baseline;
