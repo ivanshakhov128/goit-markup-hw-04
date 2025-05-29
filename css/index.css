@@ -214,8 +214,6 @@ body {
 }
 
 .features-list-item {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   width: calc((100% - 72px) / 4);
 }
 
@@ -267,6 +265,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.subtext.margintext {
+  padding-bottom: 0;
   margin-bottom: 8px;
 }
 
